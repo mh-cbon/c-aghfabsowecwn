@@ -44,5 +44,4 @@ setTimeout(function () {
   child2.stdin.end();
   child2.stdout.pipe(process.stdout)
   child2.stderr.pipe(process.stderr)
-
 }, 2500)
