@@ -1,0 +1,24 @@
+{
+  "name": "@mh-cbon/c-aghfabsowecwn",
+  "version": "1.0.0",
+  "description": "Singleton server for aghfabsowecwn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "windows",
+    "elevate",
+    "admin",
+    "root"
+  ],
+  "author": "mh-cbon <mh-cbon@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@mh-cbon/aghfabsowecwn": "^2.0.2",
+    "@mh-cbon/remote-child_process": "^1.0.2",
+    "get-port": "^2.1.0",
+    "randomstring": "^1.1.4",
+    "tmp": "0.0.28"
+  }
+}
