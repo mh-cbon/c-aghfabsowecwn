@@ -1,6 +1,6 @@
 {
   "name": "@mh-cbon/c-aghfabsowecwn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Singleton server for aghfabsowecwn",
   "main": "index.js",
   "scripts": {
