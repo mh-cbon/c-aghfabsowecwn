@@ -13,8 +13,7 @@ var pendings = [];
 
 process.on('exit', function () {
   if (fileToQuit) {
-    console.log('write file to quit')
-    // fs.writeFileSync(fileToQuit, tokenToQuit)
+    fs.writeFileSync(fileToQuit, tokenToQuit)
   }
 })
 
@@ -68,7 +67,6 @@ var executeRemoteChildProcess = function (runOpts, options) {
       mustFinish = true;
     }, maxTimeoutLen);
 
-      console.log(address);
     var openAndConnectChild = function () {
       client.open(address, function (err) {
         if (err) {

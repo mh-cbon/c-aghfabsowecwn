@@ -37,8 +37,12 @@ child.once('started', function () {
   }, 1000)
 })
 
-// a second child does not trigger an UAC query
-var child2 = spawn(process.argv[0], [__dirname + '/test/utils/stdin.js'], opts);
-child2.stdin.end();
-child2.stdout.pipe(process.stdout)
-child2.stderr.pipe(process.stderr)
+setTimeout(function () {
+
+  // a second child does not trigger an UAC query
+  var child2 = spawn(process.argv[0], [__dirname + '/test/utils/stdin.js'], opts);
+  child2.stdin.end();
+  child2.stdout.pipe(process.stdout)
+  child2.stderr.pipe(process.stderr)
+
+}, 2500)
